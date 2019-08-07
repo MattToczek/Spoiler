@@ -5,7 +5,7 @@ $('.spoiler').on('click', 'button', function(event){
     // let spoilerText = $('.spoiler span');
 
 //Show Spoiler Text
-    $('spoiler span').show();
+    $('.spoiler span').show();
 
   // Hide Reveal Spoiler Button
     $(event.target).hide();
