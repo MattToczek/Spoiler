@@ -1,11 +1,14 @@
-$('.spoiler').on('click', 'button', function(e){
+$('.spoiler').on('click', 'button', function(event){
   console.log(event.target);
   //when button= pressed, show spoiler & hide button
     // let button = $('.spoiler button');
-    let spoilerText = $('.spoiler span');
+    // let spoilerText = $('.spoiler span');
 
-    $(e.target).hide();
-    // spoilerText.show();
+//Show Spoiler Text
+    $('spoiler span').show();
+
+  // Hide Reveal Spoiler Button
+    $(event.target).hide();
 });
 
 //create "reveal spoiler" button
@@ -18,7 +21,8 @@ $('.spoiler').append($button);
 $('.spoiler span').hide();
 
 //when button= pressed, show spoiler & hide button
-// $('.spoiler button').on('click', function(){
+// $('.spoiler button').on('click', function(event){
+//   console.log(event);
 //   let button = $('.spoiler button');
 //   let spoilerText = $('.spoiler span');
 //
